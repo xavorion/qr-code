@@ -9,7 +9,6 @@
 body {
   font-family: "Outfit", sans-serif;
   font-size: 15px;
-  /* height: 100vh; */
   background-color: #d5e1ef;
 }
 
@@ -17,6 +16,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  margin: 2em 0;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
   background-color: white;
   padding: 1.1em 2em 2.67em;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .qr-container {
@@ -54,13 +54,13 @@ p {
 }
 
 .qr-container img {
-  width: 288px;
-  height: 288px;
+  width: 100%; /* Suggested by Peterson_Chery, thank you❤️ it really helps for responsive*/
+  max-width: 288px; /*limit the with*/
   border-radius: 10px;
 }
 
 .attribution {
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   margin: 0 auto;
